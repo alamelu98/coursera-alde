@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables using HTML</title>
+</head>
+<body>
+<dl>
+	<dt>TABLES</dt>
+	<dd>
+	Table in HTML are widely used to represent information in the form of grid.The following elements are used for creating Table in HTML.The information in a table id represented in the form of rows.
+	<UL>
+		<li><b>table</b> tag is used to define a table</li>
+		<li><b>tr</b> tag is used to create rows in table</li>
+		<li><b>td</b> tag is used to create content in each cell</li>
+		<li><b>th</b> tag is used to create headings for each row and column using <b>scope="row" or scope="column</b> attribute</li>
+		<li><b>rowspan</b> attribute is used to gives vertical spaces for each cell</li>
+		<li><b>colspan</b> attribute is used to give horizontal spaces for each cell</li>
+		<li><b>thead </b> tag is used to cread a table with long content</li>
+		<li><b>tbody</b> tag is used to create the content in a long table</li>
+		<li><b>tfoot</b> tag is used to create footer notes for the long table</li>
+	</UL>
+<h2>Creating a simple table using table,tr,th,td tags</h2>
+		<table>
+			<tr>
+				<th>S.no</th>
+				<th>Date</th>
+				<th>Name</th>
+				<th>age</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2-12-1998</td>
+				<td>L.Alamleu Deepika</td>
+				<td>22</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>26-12-1972</td>
+				<td>L.Geetha</td>
+				<td>47</td>
+			</tr>
+		</table>
+<h2>Creating a table using rowspan and colspan</h2>
+<table>
+	<tr>
+		<th>S.no</th>
+		<th>Date</th>
+		<th>Name</th>
+		<th>Age</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td rowspan="2">2-12-1998</td>
+		<td >L.Alamelu Deepika</td>
+		<td>23</td>
+	</tr>
+	<tr>
+				<td>2</td>
+				<td>L.Geetha</td>
+				<td>47</td>
+	</tr>
+</table>
+<h2>Creating a Long Table using thead,tbody,tfoot</h2>
+<table>
+	<thead>
+		<tr>
+		<th colspan="2">Date</th>
+		<th colspan="2">Amount spent on</th>
+		<th colspan="2">Items on</th>
+		</tr>
+		
+
+	</thead>
+	<tbody>
+		<tr>
+		<td colspan="2">10-10-2020</td>
+		<td colspan="2">2000</td>
+		<td colspan="2">Watch</td>
+        </tr>
+        <tr>
+        	<td colspan="2">20-10-2020</td>
+        	<td colspan="2">18000</td>
+        	<td colspan="2">Phone</td>
+        </tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2"> October</td>
+			<td colspan="2"> 20000</td>
+			<td colspan="2"> gadgets</td>
+		</tr>
+	</tfoot>
+</table>
+
+</body>
+</html>
